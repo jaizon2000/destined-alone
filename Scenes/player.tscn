@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://cxep8l22nh0xa"]
+
+[node name="Player" type="CharacterBody3D"]
+
+[node name="Head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.19753e-05, 3.7292, -9.50098e-05)
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="Head"]
+
+[node name="CSGSphere3D2" type="CSGSphere3D" parent="Head"]
+transform = Transform3D(0.142423, 0, 0, 0, 0.142423, 0, 0, 0, 0.142423, 0.378608, 0.189007, 0.173624)
+
+[node name="CSGSphere3D5" type="CSGSphere3D" parent="Head"]
+transform = Transform3D(0.0759208, 0, 0, 0, 0.0619171, 0, 0, 0, 0.142423, 0.328486, 0.300873, 0.127866)
+
+[node name="CSGSphere3D6" type="CSGSphere3D" parent="Head"]
+transform = Transform3D(0.0759208, 0, 0, 0, 0.0619171, 0, 0, 0, 0.142423, 0.328486, 0.300873, -0.12951)
+
+[node name="CSGSphere3D3" type="CSGSphere3D" parent="Head"]
+transform = Transform3D(0.142437, 0, 0, 0, 0.142437, 0, 0, 0, 0.142437, 0.378608, 0.189007, -0.173557)
+
+[node name="CSGSphere3D4" type="CSGSphere3D" parent="Head"]
+transform = Transform3D(0.0861356, 0, 0, 0, 0.105803, 0, 0, 0, 0.339784, 0.484829, -0.0586603, -0.00941059)
+
+[node name="Body" type="Node3D" parent="."]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Body"]
+transform = Transform3D(1, 0, 0, 0, 0.895265, 0, 0, 0, 0.891361, -0.0023613, 2.47513, -0.000179648)
+height = 1.85455
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="Body"]
+transform = Transform3D(0.201208, 0, 0, 0, 1, 0, 0, 0, 0.201208, 0.00757456, 1.02833, 0.170681)
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="Body"]
+transform = Transform3D(0.201208, 0, 0, 0, 1, 0, 0, 0, 0.201208, 0.00757456, 1.02833, -0.186814)
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="Body"]
+transform = Transform3D(0.201208, -7.88755e-05, -0.000205391, -2.54942e-06, 0.995996, -0.0179866, 0.000205988, 0.0893929, 0.200402, -0.00376317, 2.62333, -0.531669)
+height = 1.57159
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="Body"]
+transform = Transform3D(0.201208, -7.88755e-05, -0.000205391, 5.0851e-05, 0.985195, 0.0344942, 0.000199629, -0.171436, 0.198229, -0.00578496, 2.63101, 0.559852)
+height = 1.57159
