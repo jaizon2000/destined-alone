@@ -1,4 +1,7 @@
-[gd_scene format=3 uid="uid://cxep8l22nh0xa"]
+[gd_scene load_steps=2 format=3 uid="uid://cxep8l22nh0xa"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_l4ygs"]
+height = 4.18131
 
 [node name="Player" type="CharacterBody3D"]
 
@@ -20,7 +23,7 @@ transform = Transform3D(0.0759208, 0, 0, 0, 0.0619171, 0, 0, 0, 0.142423, 0.3284
 transform = Transform3D(0.142437, 0, 0, 0, 0.142437, 0, 0, 0, 0.142437, 0.378608, 0.189007, -0.173557)
 
 [node name="CSGSphere3D4" type="CSGSphere3D" parent="Head"]
-transform = Transform3D(0.0861356, 0, 0, 0, 0.105803, 0, 0, 0, 0.339784, 0.484829, -0.0586603, -0.00941059)
+transform = Transform3D(0.0602274, 0, 0, 0, 0.078794, 0, 0, 0, 0.280622, 0.484829, -0.0275066, -0.00941059)
 
 [node name="Body" type="Node3D" parent="."]
 
@@ -41,3 +44,7 @@ height = 1.57159
 [node name="CSGCylinder3D5" type="CSGCylinder3D" parent="Body"]
 transform = Transform3D(0.201208, -7.88755e-05, -0.000205391, 5.0851e-05, 0.985195, 0.0344942, 0.000199629, -0.171436, 0.198229, -0.00578496, 2.63101, 0.559852)
 height = 1.57159
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00298071, 2.0883, 0.00069356)
+shape = SubResource("CapsuleShape3D_l4ygs")
